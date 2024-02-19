@@ -10,11 +10,11 @@ class Aeronave {
     public UnidadeMedida $unidadeMedida;
 }
 
-$aviao = new Aeronave();
+// $aviao = new Aeronave();
 
-$aviao->modelo = 'Concorde';
-$aviao->classificacaoAeronave = 'Comercial';
-$aviao->capacidadeCarga = '500';
-$aviao->unidadeMedida = $kg;
+// $aviao->modelo = 'Concorde';
+// $aviao->classificacaoAeronave = 'Comercial';
+// $aviao->capacidadeCarga = '500';
+// $aviao->unidadeMedida = $kg;
 
 ?>

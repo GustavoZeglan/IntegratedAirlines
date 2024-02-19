@@ -8,16 +8,16 @@ class Funcionario {
     
 }
 
-$piloto = new Funcionario();
-$copiloto = new Funcionario();
+// $piloto = new Funcionario();
+// $copiloto = new Funcionario();
 
-$piloto->nome = 'Stuart Pot';
-$piloto->cargo = 'Piloto';
-$piloto->cpf = '999.999.999-99';
+// $piloto->nome = 'Stuart Pot';
+// $piloto->cargo = 'Piloto';
+// $piloto->cpf = '999.999.999-99';
 
-$copiloto->nome = 'Murdoc Niccols';
-$copiloto->cargo = 'Copiloto';
-$copiloto->cpf = '000.000.000-00';
+// $copiloto->nome = 'Murdoc Niccols';
+// $copiloto->cargo = 'Copiloto';
+// $copiloto->cpf = '000.000.000-00';
 
 
 ?>

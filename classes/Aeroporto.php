@@ -8,16 +8,16 @@ class Aeroporto {
 
 }
 
-$aeroporto1 = new Aeroporto();
+// $aeroporto1 = new Aeroporto();
 
-$aeroporto1->nome = 'Maringá';
-$aeroporto1->codigo = 'MGF';
-$aeroporto1->unidadeFederativa = 'PR';
+// $aeroporto1->nome = 'Maringá';
+// $aeroporto1->codigo = 'MGF';
+// $aeroporto1->unidadeFederativa = 'PR';
 
-$aeroporto2 = new Aeroporto();
+// $aeroporto2 = new Aeroporto();
 
-$aeroporto2->nome = 'Cuiabá';
-$aeroporto2->codigo = 'CGB';
-$aeroporto2->unidadeFederativa = 'MT';
+// $aeroporto2->nome = 'Cuiabá';
+// $aeroporto2->codigo = 'CGB';
+// $aeroporto2->unidadeFederativa = 'MT';
 
 ?>
