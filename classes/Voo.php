@@ -6,33 +6,44 @@ require_once "Funcionario.php";
 
 class Voo {
 
-    public Aeroporto $aeroportoOrigem;
-    public Aeroporto $aeroportoDestino;
-    public Aeronave $aviao;
-    public $equipe = array(); 
+    private Aeroporto $aeroportoOrigem;
+    private Aeroporto $aeroportoDestino;
+    private Aeronave $aviao;
+    private $equipe = array(); 
 
-    public function addFuncionario($funcionario) : void {
+    public function getAeroportoOrigem(): Aeroporto {
+        return $this->aeroportoOrigem;
+    }
+    public function getAeroportoDestino(): Aeroporto {
+        return $this->aeroportoDestino;
+    }
+    public function getAviao(): Aeronave {
+        return $this->aviao;
+    }
+
+    public function setAeroportoOrigem(Aeroporto $aeroportoOrigem): void {
+        $this->aeroportoOrigem = $aeroportoOrigem;
+    }
+    public function setAeroportoDestino(Aeroporto $aeroportoDestino): void {
+        $this->aeroportoDestino = $aeroportoDestino;
+    }
+    public function setAviao(Aeronave $aviao): void {
+        $this->aviao = $aviao;
+    }
+
+    public function addFuncionario(Funcionario $funcionario) : void {
         array_push($this->equipe, $funcionario);
     }
 
 }
 
-// $voo1 = new Voo();
+$voo1 = new Voo();
 
-// $voo1->aeroportoOrigem = $aeroporto1;
-// $voo1->aeroportoDestino = $aeroporto2;
-// $voo1->aviao = $aviao;
+$voo1->setAeroportoOrigem($aeroporto1);
+$voo1->setAeroportoDestino($aeroporto2);
+$voo1->setAviao($aviao);
 
-// $voo1->addFuncionario($piloto);
-// $voo1->addFuncionario($copiloto);
-
-// echo $voo1->aeroportoOrigem->nome;
-// echo $voo1->aeroportoDestino->nome;
-// echo $voo1->aviao->modelo;
-// echo $voo1->aviao->unidadeMedida->tipo;
-
-// foreach ($voo1->equipe as $i) {
-//     echo "$i->nome: $i->cargo \n";
-// }
+$voo1->addFuncionario($piloto);
+$voo1->addFuncionario($copiloto);
 
 ?>
